@@ -4,6 +4,7 @@ import re
 
 # Problem 1: GCD of multiple numbers
 def problem_1_gcd_multiple_numbers():
+    nums = "2 5 10 20"
     nums = list(map(int, input("Enter numbers separated by spaces to find the GCD: ").split()))
     return reduce(math.gcd, nums)
 
