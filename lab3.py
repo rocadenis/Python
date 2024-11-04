@@ -41,11 +41,11 @@ def ex_3(ct1, ct2):
     elif isinstance(ct1, type(ct2)):  # now checking if the args have the same type
         if isinstance(ct1, list) or isinstance(
             ct1, set
-        ):  # basic containers: list and set
+        ): 
             if len(ct1) != len(ct2):
                 return False
 
-            for i, j in zip(ct1, ct2):  # basic containers: tuple
+            for i, j in zip(ct1, ct2):  
                 if not ex_3(i, j):
                     return False
 
